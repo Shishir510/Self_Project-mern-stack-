@@ -30,7 +30,7 @@ app.use("/employee", router)
 
 // !using .env file for securing the password and userName of developer. Lastly we add this file to .gitignore file to kept it private
 
-const CONNECTION_URL = `mongodb+srv://MernProject:1234@cluster0.lvd2yvb.mongodb.net/db?retryWrites=true&w=majority`;
+const CONNECTION_URL = `mongodb+srv://<Username>:<Password>@cluster0.lvd2yvb.mongodb.net/db?retryWrites=true&w=majority`;
 
 //accesing the port from .env file if code is publically shared
 const PORT = process.env.PORT || 5000;
